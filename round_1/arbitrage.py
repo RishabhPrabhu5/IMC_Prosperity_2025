@@ -24,7 +24,13 @@ exchange_array = np.array([
     [1.34, 1.98, 0.64, 1.00]
 ])
 
+"""
+If you run the code it spits out a list of every sequence of five trades, sorted by how much money you have at the end.
 
+The first element of the tuple is the index of the currency you end with, the second is how much money you have, and the third is the sequence of trades you made.
+
+I didn't include the first element as seashells because that's obvious
+"""
 
 # print(exchange_array)
 
@@ -74,6 +80,7 @@ for tup in final_list:
 
 last_exchange.sort(key=lambda x: x[1])
 print(last_exchange)
+
 
 # final_list.sort(key=lambda x: x[1])
 # print(final_list)
